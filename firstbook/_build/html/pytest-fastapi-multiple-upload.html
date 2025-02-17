@@ -418,57 +418,18 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">======================================= test session starts ========================================</span>
-platform linux -- Python 3.12.1, pytest-8.3.4, pluggy-1.5.0
-rootdir: /workspaces/blog
+platform linux -- Python 3.12.3, pytest-8.3.4, pluggy-1.5.0
+rootdir: /home/olivier/git-repo/document-extractor
 configfile: pyproject.toml
-plugins: anyio-4.8.0
+plugins: dotenv-0.5.2, mock-3.14.0, timeout-2.3.1, cov-6.0.0, env-1.1.5, anyio-4.7.0
 collected 1 item
 
-t_a905a769cfec4e8d8cacef4a27b52fea.py 
+t_ded9c4dd545e47aaaac130d87462523c.py <span class=" -Color -Color-Green">.                                                      [100%]</span>
+
+<span class=" -Color -Color-Green">======================================== </span><span class=" -Color -Color-Bold -Color-Bold-Green">1 passed</span><span class=" -Color -Color-Green"> in 0.07s =========================================</span>
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">F</span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">                                                      [100%]</span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============================================= FAILURES =============================================
-<span class=" -Color -Color-Bold -Color-Bold-Red">__________________________________________ test_post_main __________________________________________</span>
-
-    def test_post_main():
-        response = client.post(
-            <span class=" -Color -Color-Yellow">&quot;/&quot;</span>,
-            files=[
-&gt;               (<span class=" -Color -Color-Yellow">&quot;files&quot;</span>, open(<span class=" -Color -Color-Yellow">&quot;file1.txt&quot;</span>, <span class=" -Color -Color-Yellow">&quot;rb&quot;</span>)),
-                (<span class=" -Color -Color-Yellow">&quot;files&quot;</span>, open(<span class=" -Color -Color-Yellow">&quot;file2.txt&quot;</span>, <span class=" -Color -Color-Yellow">&quot;rb&quot;</span>)),
-            ],
-        )
-
-<span class=" -Color -Color-Bold -Color-Bold-Red">/tmp/ipykernel_16007/1963879769.py</span>:8: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-file = &#39;file1.txt&#39;, args = (&#39;rb&#39;,), kwargs = {}
-
-    <span class=" -Color -Color-White">@functools</span>.wraps(io_open)
-    def _modified_open(file, *args, **kwargs):
-        if file in {0, 1, 2}:
-            raise ValueError(
-                <span class=" -Color -Color-Yellow">f&quot;IPython won&#39;t let you open fd={</span>file<span class=" -Color -Color-Yellow">} by default &quot;</span>
-                <span class=" -Color -Color-Yellow">&quot;as it is likely to crash IPython. If you know what you are doing, &quot;</span>
-                <span class=" -Color -Color-Yellow">&quot;you can use builtins&#39; open.&quot;</span>
-            )
-    
-&gt;       return io_open(file, *args, **kwargs)
-<span class=" -Color -Color-Bold -Color-Bold-Red">E       FileNotFoundError: [Errno 2] No such file or directory: &#39;file1.txt&#39;</span>
-
-<span class=" -Color -Color-Bold -Color-Bold-Red">/home/codespace/.cache/pypoetry/virtualenvs/blog-6oKgwDRr-py3.12/lib/python3.12/site-packages/IPython/core/interactiveshell.py</span>:324: FileNotFoundError
-<span class=" -Color -Color-Bold -Color-Bold-Cyan">===================================== short test summary info ======================================</span>
-<span class=" -Color -Color-Red">FAILED</span> t_a905a769cfec4e8d8cacef4a27b52fea.py::<span class=" -Color -Color-Bold">test_post_main</span> - FileNotFoundError: [Errno 2] No such file or directory: &#39;file1.txt&#39;
-<span class=" -Color -Color-Red">======================================== </span><span class=" -Color -Color-Bold -Color-Bold-Red">1 failed</span><span class=" -Color -Color-Red"> in 0.14s =========================================</span>
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ExitCode.TESTS_FAILED: 1&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ExitCode.OK: 0&gt;
 </pre></div>
 </div>
 </div>
