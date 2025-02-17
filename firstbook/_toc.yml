@@ -4,4 +4,4 @@
 format: jb-book
 root: intro
 chapters:
-- file: python-logs.ipynb
+#- file: python-logs.ipynb
