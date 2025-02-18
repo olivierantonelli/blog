@@ -4,5 +4,6 @@
 format: jb-book
 root: intro
 chapters:
+- file: callable_contravariant_arguments.ipynb
 - file: pytest-fastapi-multiple-upload.ipynb
 - file: pypi-multi-repo.md
