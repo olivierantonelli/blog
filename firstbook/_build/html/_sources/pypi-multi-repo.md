@@ -1,4 +1,4 @@
-### Pypi multi repository with private and pypi.org
+# Pypi multi repository with private and pypi.org
 
 Many companies needs to host pypi repositories for their own packages. Hosting can be configured with information in https://packaging.python.org/en/latest/guides/hosting-your-own-index/. Others solutions like JFrog Artifactory or Sonatype® Nexus can be used as well. After configuring a new pypi repository come the time to configuration of tools to use it which is the purpose of this post.
 
