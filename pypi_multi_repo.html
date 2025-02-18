@@ -6,7 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Collection of notebooks about data science</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pypi multi repository with private and pypi.org &#8212; Collection of notebooks about data science</title>
   
   
   
@@ -55,12 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pypi_multi_repo';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Tests pytest with FastAPI with multiple uploads" href="pytest_fastapi_multiple_upload.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -92,7 +92,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -122,8 +122,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -172,10 +170,10 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="callable_contravariant_arguments.html">A callable is contravariant in its arguments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pytest_fastapi_multiple_upload.html">Tests pytest with FastAPI with multiple uploads</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pypi_multi_repo.html">Pypi multi repository with private and pypi.org</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pypi multi repository with private and pypi.org</a></li>
 </ul>
 
     </div>
@@ -247,7 +245,7 @@
       
       
       
-      <li><a href="https://github.com/olivierantonelli/blog/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/olivierantonelli/blog/issues/new?title=Issue%20on%20page%20%2Fpypi_multi_repo.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -259,6 +257,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/pypi_multi_repo.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -309,42 +355,102 @@ document.write(`
 </div>
               
               
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Pypi multi repository with private and pypi.org</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="pypi-multi-repository-with-private-and-pypi-org">
+<h1>Pypi multi repository with private and <a class="reference external" href="http://pypi.org">pypi.org</a><a class="headerlink" href="#pypi-multi-repository-with-private-and-pypi-org" title="Link to this heading">#</a></h1>
+<p>Many companies needs to host pypi repositories for their own packages. Hosting can be configured with information in <a class="reference external" href="https://packaging.python.org/en/latest/guides/hosting-your-own-index/">https://packaging.python.org/en/latest/guides/hosting-your-own-index/</a>. Others solutions like JFrog Artifactory or Sonatype® Nexus can be used as well. After configuring a new pypi repository come the time to configuration of tools to use it which is the purpose of this post.</p>
+<p>Serval tools can be used for interracting with the repository.</p>
+<p>Here we use simple repository API as described in PEP 503.</p>
+<p>Simple pypi repository accessed via web
+For your private repo, to get either all the packages present in a repo or the files associated with a package :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>--netrc<span class="w"> </span>https://my-pypi-repo-host/repository/my-pypi-hosted-repo/simple/
+curl<span class="w"> </span>--netrc<span class="w"> </span>https://my-pypi-repo-host/repository/my-pypi-hosted-repo/simple/&lt;<span class="s2">&quot;package_name&quot;</span>&gt;
+</pre></div>
+</div>
+<p>To get all the package files of a repository with wget (login/passwd in .netrc) :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>--mirror<span class="w"> </span>-e<span class="w"> </span><span class="nv">robots</span><span class="o">=</span>off<span class="w"> </span>https://my-pypi-repo-host/repository/my-pypi-hosted-repo/simple/
+</pre></div>
+</div>
+<p>Here we use a ~/.netrc file with 0600 rights for login/password :</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>machine my-pypi-repo-host
+    login my-user
+    password my-pass
+Twine for uploading
+# content of ~/.pypirc file
+[distutils]
+index-servers = my-pypi-repo-name
+[my-pypi-repo-name]
+repository: https://my-pypi-repo-host/repository/my-pypi-hosted-repo/
+username: my-user
+password: my-pass
+</pre></div>
+</div>
+<p>After that, give the root certificate to twine either by environement variable or with the command line :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Serval environement variable can be use, here we use one just for twine</span>
+<span class="c1"># export TWINE_CERT=/etc/ssl/certs/ca-certificates.crt</span>
+<span class="c1"># Without environement variable set the root certificate is given directly in the command line</span>
+twine<span class="w"> </span>upload<span class="w"> </span>-r<span class="w"> </span>my-pypi-repo-name<span class="w"> </span>--cert<span class="w"> </span>/usr/local/share/ca-certificates/my-root-cert.crt<span class="w"> </span>dist/*
+</pre></div>
+</div>
+<p>PIP for downloading packages
+Here we configure pip to use both private repo and <a class="reference external" href="http://pypi.org">pypi.org</a> :</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># ~/.config/pip/pip.conf file for direct access
+[global]
+index-url = https://my-pypi-repo-host/repository/my-pypi-hosted-repo/simple
+extra-index-url= https://pypi.org/simple
+cert = /etc/ssl/certs/ca-certificates.crt
+# Note the /etc/ssl/certs/ca-certificates.crt with both root certificate for both my-pypi-repo-host and pypi.org
+Poetry for downloading packages
+</pre></div>
+</div>
+<p>Here we configure poetry to use both private repo and <a class="reference external" href="http://pypi.org">pypi.org</a> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span><span class="nb">source</span><span class="w"> </span>add<span class="w"> </span>--priority<span class="o">=</span>primary<span class="w"> </span>my-pypi-repo-name<span class="w"> </span>https://my-pypi-repo-host/repository/my-pypi-hosted-repo/simple/
+poetry<span class="w"> </span>config<span class="w"> </span>certificates.my-pypi-repo-name.cert<span class="w"> </span>/usr/local/share/ca-certificates/my-root-cert.crt
+poetry<span class="w"> </span>config<span class="w"> </span>http-basic.my-pypi-repo-name<span class="w"> </span>my-user<span class="w"> </span>my-pass
+poetry<span class="w"> </span><span class="nb">source</span><span class="w"> </span>add<span class="w"> </span>--priority<span class="o">=</span>supplemental<span class="w"> </span>pypi
+</pre></div>
+</div>
+<p>After that check pyproject.toml file for sources and ~/.config/pypoetry/auth.toml for user/pass and cert.</p>
+<p>Note that poetry support publish command but only with Legacy Upload API and I didn’t tested it.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
     }
-  </script>
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
 
               
               
@@ -353,6 +459,15 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="pytest_fastapi_multiple_upload.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tests pytest with FastAPI with multiple uploads</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
