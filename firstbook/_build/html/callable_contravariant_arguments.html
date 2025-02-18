@@ -512,15 +512,19 @@ Total salary of all my employees not managers : 3000
 </div>
 <p>It works ! Of course the managers won’t be happy to lose their bonus proportional to the number of subordonates as their salary is now computed with salary_employee ; but it works.</p>
 <p>Can I use the function salary_manager with get_sum_all_salary_salary ?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
     <span class="s2">&quot;Total salary of all my salaries (but computed as managers) :&quot;</span><span class="p">,</span>
     <span class="n">get_sum_all_employee_salary</span><span class="p">(</span><span class="n">salary</span><span class="o">=</span><span class="n">salary_manager</span><span class="p">),</span>
-<span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
@@ -550,6 +554,11 @@ Total salary of all my employees not managers : 3000
 </pre></div>
 </div>
 </div>
+</details>
+</div>
+<p>We have an error message:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ne">AttributeError</span><span class="p">:</span> <span class="s1">&#39;Employee&#39;</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s1">&#39;number_of_subordonates&#39;</span>
+</pre></div>
 </div>
 <p>Salary_manager compute the salary of a manager using number_of_subordonates which don’t exist for an employee not manager so it can’t work…</p>
 <p>Well, I can use salary_employee instead of salary_manager but (in general) not salary_manager instead of salary_employee so callable[[Employee], float] is a (strict) subtype of callable[[Manager], float].</p>
