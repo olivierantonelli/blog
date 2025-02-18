@@ -1,6 +1,6 @@
-# Welcome to my blog
+# Welcome to this collection of articles
 
-This is a small blog with a couple of Jupyter notebooks about data science.
+The articles are about data science ( AI, machine learning and Python programming)
 
 ```{tableofcontents}
 ```
