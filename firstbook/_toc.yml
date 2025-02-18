@@ -5,3 +5,4 @@ format: jb-book
 root: intro
 chapters:
 - file: pytest-fastapi-multiple-upload.ipynb
+- file: pypi-multi-repo.md
