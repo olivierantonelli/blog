@@ -7,8 +7,6 @@ copyright: "2025"
 only_build_toc_files: true
 # logo: logo.png
 
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: off
 
@@ -20,7 +18,7 @@ latex:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/olivierantonelli/blog  # Online location of your book
-  path_to_book: firstbook  # Optional path to your book, relative to the repository root
+  path_to_book: blog  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
