@@ -1,7 +1,7 @@
 [project]
 name = "blog"
 version = "0.1.0"
-description = ""
+description = "Collection of Jupyter notebook (mainly) about data science"
 authors = [
     {name = "Your Name",email = "you@example.com"}
 ]
@@ -10,21 +10,18 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "jupyter-book (>=1.0.3,<2.0.0)",
-    "ipykernel (>=6.29.5,<7.0.0)",
-    "pandas (>=2.2.3,<3.0.0)",
-    "polars (>=1.22.0,<2.0.0)",
-    "altair (>=5.5.0,<6.0.0)",
-    "plotly (>=6.0.0,<7.0.0)",
     "ghp-import (>=2.1.0,<3.0.0)",
-    "vega-datasets (>=0.9.0,<0.10.0)",
-    "ipytest (>=0.14.2,<0.15.0)",
-    "fastapi (>=0.115.8,<0.116.0)",
-    "httpx (>=0.28.1,<0.29.0)",
-    "python-multipart (>=0.0.20,<0.0.21)",
+
     "pydata-sphinx-theme (==0.15.3)"
 ]
 
+[tool.poetry]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
