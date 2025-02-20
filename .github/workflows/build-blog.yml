@@ -2,7 +2,7 @@ name: site-build-deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [ feature/test-with-actions ]
 
 jobs:
   build-deploy:
