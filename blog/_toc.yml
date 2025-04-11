@@ -7,3 +7,4 @@ chapters:
 - file: callable_contravariant_arguments.ipynb
 - file: pytest_fastapi_multiple_upload.ipynb
 - file: pypi_multi_repo.md
+- file: tests-ollama-query.ipynb
