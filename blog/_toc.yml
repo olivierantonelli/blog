@@ -8,3 +8,4 @@ chapters:
 - file: pytest_fastapi_multiple_upload.ipynb
 - file: pypi_multi_repo.md
 - file: tests-ollama-query.ipynb
+- file: opensearch_export_import.ipynb
