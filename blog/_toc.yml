@@ -9,3 +9,5 @@ chapters:
 - file: pypi_multi_repo.md
 - file: tests-ollama-query.ipynb
 - file: opensearch_export_import.ipynb
+- file: basic_chat.ipynb
+
