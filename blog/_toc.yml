@@ -10,4 +10,5 @@ chapters:
 - file: tests-ollama-query.ipynb
 - file: opensearch_export_import.ipynb
 - file: basic_chat.ipynb
+- file: tokenizer_visualization.ipynb
 
